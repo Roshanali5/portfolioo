@@ -1,467 +1,98 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Roshan Ali Khattak - Full Stack Developer skilled in HTML, CSS, JavaScript, PHP, Laravel, React, TailwindCSS, and Next.js." />
+    <meta name="author" content="Roshan Ali Khattak" />
+    <title>Roshan Ali Khattak | Full Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Creative Web Developer Portfolio</title>
 </head>
-<body class="bg-white min-h-screen">
-    <!-- Header Navigation -->
-    <header class="bg-slate-900 shadow-lg border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4 md:py-6">
-                <!-- Logo/Brand -->
-                <div class="text-xl md:text-2xl font-bold text-white">
-                    <span class="block md:hidden">RAK</span>
-                    <span class="hidden md:block">Roshan</span>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2 focus:outline-none">
-                        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
+<body class="bg-gray-100 text-gray-800">
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
-                    <div class="flex space-x-8 lg:space-x-12">
-                        <a href="#home" class="text-slate-300 hover:text-white transition-colors text-base lg:text-lg">Home</a>
-                        <a href="#about" class="text-slate-300 hover:text-white transition-colors text-base lg:text-lg">About</a>
-                        <a href="#process" class="text-slate-300 hover:text-white transition-colors text-base lg:text-lg">Process</a>
-                        <a href="#works" class="text-slate-300 hover:text-white transition-colors text-base lg:text-lg">Works</a>
-                    </div>
-                </nav>
-
-                <!-- Contact Button -->
-                <a href="https://pk.linkedin.com/in/roshan-ali-khattak-a66988227" target="_blank" class="bg-red-500 text-white px-3 py-2 md:px-6 md:py-2 rounded-lg hover:bg-red-600 transition-colors text-sm md:text-base text-center">
-                    <span class="hidden sm:inline">Contact Me</span>
-                    <span class="sm:hidden">Contact</span>
-                </a>
-            </div>
-
-            <!-- Mobile Navigation Menu -->
-            <div id="mobile-menu" class="md:hidden hidden pb-4 border-t border-slate-700 mt-4">
-                <div class="flex flex-col space-y-3 pt-4">
-                    <a href="#home" class="text-slate-300 hover:text-white transition-colors text-lg px-2 py-2 rounded hover:bg-slate-800">Home</a>
-                    <a href="#about" class="text-slate-300 hover:text-white transition-colors text-lg px-2 py-2 rounded hover:bg-slate-800">About</a>
-                    <a href="#process" class="text-slate-300 hover:text-white transition-colors text-lg px-2 py-2 rounded hover:bg-slate-800">Process</a>
-                    <a href="#works" class="text-slate-300 hover:text-white transition-colors text-lg px-2 py-2 rounded hover:bg-slate-800">Works</a>
-                </div>
-            </div>
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-blue-600">Roshan Ali Khattak</h1>
+            <nav class="space-x-4">
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 bg-white">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <!-- Left Side - Profile Image -->
-            <div class="relative order-2 lg:order-1">
-                <div class="bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-500 rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-2xl transform rotate-1 md:rotate-3 hover:rotate-0 transition-transform duration-300">
-                    <div class="bg-slate-800 rounded-xl md:rounded-2xl p-3 md:p-6 -rotate-1 md:-rotate-3">
-                        <div class="w-full max-w-sm mx-auto h-64 sm:h-80 md:w-64 md:h-80 bg-slate-700 rounded-lg md:rounded-xl flex items-center justify-center overflow-hidden">
-                            <img src="images/roshan.png" alt="Roshan Ali Khattak" class="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Full Stack Developer</h2>
+        <p class="text-lg md:text-xl mb-6">I build modern, responsive, and user-friendly web applications.</p>
+        <button onclick="downloadResume()" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200 transition">
+            📄 Download Resume
+        </button>
+    </section>
 
-            <!-- Right Side - Content -->
-            <div class="space-y-6 md:space-y-8 order-1 lg:order-2">
-                <div>
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                        CREATIVE WEB
-                        <span class="block text-red-500">— DEVELOPER</span>
-                    </h1>
-                    <p class="text-black text-base md:text-lg mt-4 md:mt-6 leading-relaxed">
-                        I'm Roshan Ali Khattak Full Stack Creative Web Developer & Software Engineer based in Attock, Pakistan. I have 3 years of experience in creating custom websites and web applications. My mission is to help businesses and organizations achieve their goals through effective and efficient web development solutions. Providing the best development services for your next projects.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <!-- ABOUT -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">About Me</h3>
+        <p class="max-w-2xl mx-auto text-center text-lg">
+            Hi, I'm <strong>Roshan Ali Khattak</strong>, a passionate Full Stack Developer with experience in building high-quality web applications using modern technologies like Laravel, React, TailwindCSS, and Next.js.
+        </p>
+    </section>
 
-        <!-- Tech Stack Banner -->
-        <div class="mt-12 md:mt-20">
-            <div class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-4 md:p-6 rounded-xl md:rounded-2xl shadow-xl">
-                <div class="flex flex-wrap justify-center items-center gap-3 md:gap-8 text-white font-semibold text-sm md:text-lg">
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        PHP
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        Laravel
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        JavaScript
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        HTML
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        CSS
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        TailwindCSS
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        React
-                    </span>
-                    <span class="flex items-center">
-                        <span class="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full mr-2 md:mr-3"></span>
-                        Next.js
-                    </span>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- About Me Section -->
-    <section id="about" class="bg-white min-h-screen py-12 md:py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Title -->
-            <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 md:mb-8">ABOUT ME</h2>
-            </div>
-
-            <!-- About Content -->
-            <div class="space-y-6 md:space-y-8 mb-12 md:mb-16">
-                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto">
-                    I am a passionate web developer with 3 years of experience in creating custom websites and web applications. My mission is to help businesses and organizations achieve their goals through effective and efficient web development solutions.
-                </p>
-                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto">
-                    As a dedicated web developer, I am committed to staying up-to-date with the latest technologies and trends. I approach each project with enthusiasm, creativity, and a focus on delivering a high-quality end product that meets the unique needs of each client. With a passion for innovation and an eye for detail, I specialize in creating intuitive and user-friendly web experiences. My goal is to not only meet but exceed my clients' expectations and deliver exceptional results every time.
-                </p>
-            </div>
-
-            <!-- Skills Grid -->
-            <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-start">
-                <!-- Strategy -->
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center md:text-left">
-                        Strategy
-                    </h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Brand Building</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Marketing</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Communications</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Business Development</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- My Skills -->
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center md:text-left">
-                        My Skills
-                    </h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">React</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Next.js</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Node.js</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Laravel</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Advice -->
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center md:text-left">
-                        Advice
-                    </h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Change Management</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Process Management</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Organizational Development</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3 md:mr-4 flex-shrink-0"></span>
-                            <span class="text-sm md:text-base">Team Building</span>
-                        </li>
-                    </ul>
-                </div>
+    <!-- SKILLS -->
+    <section id="skills" class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-white rounded-lg shadow">HTML</div>
+                <div class="p-4 bg-white rounded-lg shadow">CSS</div>
+                <div class="p-4 bg-white rounded-lg shadow">JavaScript</div>
+                <div class="p-4 bg-white rounded-lg shadow">PHP</div>
+                <div class="p-4 bg-white rounded-lg shadow">Laravel</div>
+                <div class="p-4 bg-white rounded-lg shadow">React</div>
+                <div class="p-4 bg-white rounded-lg shadow">TailwindCSS</div>
+                <div class="p-4 bg-white rounded-lg shadow">Next.js</div>
             </div>
         </div>
     </section>
 
-    <!-- My Working Process Section -->
-    <section id="process" class="bg-slate-950 min-h-screen py-12 md:py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Title -->
-            <div class="text-center mb-12 md:mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8">MY WORKING PROCESS</h2>
-            </div>
-
-            <!-- Process Timeline - Mobile First Design -->
-            <div class="relative">
-                <!-- Mobile Timeline -->
-                <div class="md:hidden space-y-12">
-                    <!-- Research -->
-                    <div class="relative pl-8">
-                        <div class="absolute left-0 top-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                            <span class="text-white text-xs font-bold">01</span>
-                        </div>
-                        <div class="absolute left-3 top-6 w-0.5 bg-blue-500 h-16"></div>
-                        <h3 class="text-2xl font-bold text-blue-500 mb-3">Research</h3>
-                        <p class="text-slate-300 text-base leading-relaxed">
-                            I start by learning and researching based on client brief and resource to gain about the needs, goals, products, and requirements to do well.
-                        </p>
-                    </div>
-
-                    <!-- Strategy -->
-                    <div class="relative pl-8">
-                        <div class="absolute left-0 top-0 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-black text-xs font-bold">02</span>
-                        </div>
-                        <div class="absolute left-3 top-6 w-0.5 bg-white h-16"></div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Strategy</h3>
-                        <p class="text-slate-300 text-base leading-relaxed">
-                            Then start to plan and structure the project process and budget based on the discovery phase before start the development.
-                        </p>
-                    </div>
-
-                    <!-- Development -->
-                    <div class="relative pl-8">
-                        <div class="absolute left-0 top-0 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-black text-xs font-bold">03</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Development</h3>
-                        <p class="text-slate-300 text-base leading-relaxed">
-                            After I completed all the processes, goals, and scope, I started to do the development process such as creating basic codes and programming.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Desktop Timeline -->
-                <div class="hidden md:block relative">
-                    <!-- Vertical Line -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-500 h-full"></div>
-                    
-                    <!-- Process Steps -->
-                    <div class="space-y-20">
-                        <!-- Research -->
-                        <div class="relative grid md:grid-cols-2 gap-12 items-center">
-                            <div class="md:text-right">
-                                <div class="flex items-center md:justify-end mb-4">
-                                    <span class="text-blue-500 text-lg font-bold mr-4">01.</span>
-                                    <h3 class="text-4xl font-bold text-blue-500">Research</h3>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-slate-300 text-lg leading-relaxed">
-                                    I start by learning and researching based on client brief and resource to gain about the needs, goals, products, and requirements to do well.
-                                </p>
-                            </div>
-                            <!-- Timeline Dot -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        </div>
-
-                        <!-- Strategy -->
-                        <div class="relative grid md:grid-cols-2 gap-12 items-center">
-                            <div class="md:order-2">
-                                <div class="flex items-center mb-4">
-                                    <span class="text-white text-lg font-bold mr-4">02.</span>
-                                    <h3 class="text-4xl font-bold text-white">Strategy</h3>
-                                </div>
-                            </div>
-                            <div class="md:order-1 md:text-right">
-                                <p class="text-slate-300 text-lg leading-relaxed">
-                                    Then start to plan and structure the project process and budget based on the discovery phase before start the development.
-                                </p>
-                            </div>
-                            <!-- Timeline Dot -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full"></div>
-                        </div>
-
-                        <!-- Development -->
-                        <div class="relative grid md:grid-cols-2 gap-12 items-center">
-                            <div class="md:text-right">
-                                <div class="flex items-center md:justify-end mb-4">
-                                    <span class="text-white text-lg font-bold mr-4">03.</span>
-                                    <h3 class="text-4xl font-bold text-white">Development</h3>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-slate-300 text-lg leading-relaxed">
-                                    After I completed all the processes, goals, and scope, I started to do the development process such as creating basic codes and programming.
-                                </p>
-                            </div>
-                            <!-- Timeline Dot -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full"></div>
-                        </div>
-                    </div>
-                </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="container mx-auto py-16 px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h4 class="text-xl font-semibold mb-2">Health Care</h4>
+                <p class="mb-4">Developed an advanced healthcare platform with appointment booking, patient records, and responsive UI.</p>
+                <a href="#" class="text-blue-600 hover:underline">View Project</a>
             </div>
         </div>
     </section>
 
-    <!-- Recent Projects Section -->
-    <section id="works" class="bg-white min-h-screen py-12 md:py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
-            <div class="mb-12 md:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-center md:text-left">
-                    TAKE A LOOK AT MY<br>
-                    <span class="text-gray-900">RECENT PROJECTS</span>
-                </h2>
-            </div>
+    <!-- CONTACT -->
+    <section id="contact" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+            <p class="mb-2">📧 <a href="mailto:roshanalikhattak@gmail.com" class="underline">roshanalikhattak@gmail.com</a></p>
+            <p>📱 0300 0116520</p>
+        </div>
+    </section>
 
-            <!-- Projects Grid -->
-            <div class="grid md:grid-cols-2 gap-8 md:gap-16">
-                <!-- Left Column -->
-                <div class="space-y-8">
-                    <!-- HEALTH CARE Project -->
-                    <div class="group w-full max-w-md mx-auto">
-                        <!-- Top Card -->
-                        <div class="bg-gray-100 rounded-xl md:rounded-2xl p-4 md:p-6 mb-4 overflow-hidden">
-                            <div class="bg-white rounded-lg md:rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 p-0">
-                                <div class="h-40 md:h-48 rounded-lg overflow-hidden grid grid-cols-2 gap-0">
-                                    <img src="./images/h1.png" alt="Health Care Project Image 1" class="w-full h-full object-cover block">
-                                    <img src="./images/h3.jpg" alt="Health Care Project Image 2" class="w-full h-full object-cover block">
-                                </div>
-                            </div>
-                        </div>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; 2025 Roshan Ali Khattak. All Rights Reserved.</p>
+    </footer>
 
-                        <!-- Title & Button -->
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Health Care</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-4">Experienced this awesome website development project recently.</p>
-                            <button onclick="toggleDetails(this)" class="text-blue-500 font-semibold hover:text-blue-600 transition-colors text-sm md:text-base">
-                                Case Study →
-                            </button>
-                        </div>
-
-                        <!-- Hidden Details Section -->
-                        <div class="project-details hidden mt-4 bg-white p-3 md:p-4 rounded-xl shadow-md">
-                            <h4 class="text-base md:text-lg font-bold mb-2">Project Overview</h4>
-                            <p class="text-gray-700 text-sm md:text-base mb-3">
-                                This project was built using modern web technologies including React, Next.js, and TailwindCSS.
-                                The goal was to create a responsive health care website with booking features.
-                            </p>
-
-                            <h4 class="text-base md:text-lg font-bold mb-2">Skills Used</h4>
-                            <ul class="list-disc list-inside text-gray-700 text-sm md:text-base mb-3">
-                                <li>Next.js</li>
-                                <li>React</li>
-                                <li>Tailwind CSS</li>
-                                <li>Responsive Design</li>
-                            </ul>
-
-                            <h4 class="text-base md:text-lg font-bold mb-2">Project Images</h4>
-                            <div class="grid grid-cols-2 gap-2 mb-6">
-                                <img src="./images/h1.png" alt="Screenshot 1" class="rounded-lg shadow">
-                                <img src="./images/h2.jpg" alt="Screenshot 2" class="rounded-lg shadow">
-                                <img src="./images/h3.jpg" alt="Screenshot 3" class="rounded-lg shadow col-span-2">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CUI HR Portal Project -->
-                    <div class="group w-full max-w-md mx-auto">
-                        <div class="bg-gray-100 rounded-xl md:rounded-2xl p-4 md:p-6 mb-4 overflow-hidden">
-                            <div class="bg-white rounded-lg md:rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 p-0">
-                                <div class="h-40 md:h-48 rounded-lg overflow-hidden flex items-center justify-center">
-                                    <img src="./images/c1.png" alt="CUI HR Portal Project Image" class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">CUI HR Portal</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-4">
-                                Faculty management system designed to maintain and organize faculty records within CUI Attock campus.
-                            </p>
-                            <button onclick="toggleDetails(this)" class="text-blue-500 font-semibold hover:text-blue-600 transition-colors text-sm md:text-base">
-                                Case Study →
-                            </button>
-                        </div>
-
-                        <div class="project-details hidden mt-4 bg-white p-3 md:p-4 rounded-xl shadow-md">
-                            <h4 class="text-base md:text-lg font-bold mb-2">Project Overview</h4>
-                            <p class="text-gray-700 text-sm md:text-base mb-3">
-                                CUI HR Portal is a faculty management system designed to maintain and organize faculty records within CUI Attock campus.
-                                It streamlines administrative processes, improves record accessibility, and ensures secure data handling for faculty information.
-                            </p>
-
-                            <h4 class="text-base md:text-lg font-bold mb-2">Skills Used</h4>
-                            <ul class="list-disc list-inside text-gray-700 text-sm md:text-base mb-3">
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>Next.js</li>
-                                <li>MySQL</li>
-                                <li>Tailwind CSS</li>
-                            </ul>
-
-                            <h4 class="text-base md:text-lg font-bold mb-2">Project Images</h4>
-                            <div class="grid grid-cols-1 gap-2 mb-6">
-                                <img src="./images/c1.png" alt="CUI HR Portal Screenshot" class="rounded-lg shadow w-full h-32 md:h-48 object-cover">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="space-y-8">
-                    <!-- Task Hero Project -->
-                    <div class="group w-full max-w-md mx-auto">
-                        <div class="bg-gray-100 rounded-xl md:rounded-2xl p-4 md:p-6 mb-4 overflow-hidden">
-                            <div class="bg-white rounded-lg md:rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 p-0">
-                                <div class="h-40 md:h-48 rounded-lg overflow-hidden flex items-center justify-center">
-                                    <img src="./images/e1.jpg" alt="Task Hero Project Image" class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Task Hero</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-4">Experienced this awesome e-commerce platform development project recently.</p>
-                            <button onclick="toggleDetails(this)" class="text-blue-500 font-semibold hover:text-blue-600 transition-colors text-sm md:text-base">
-                                Case Study →
-                            </button>
-                        </div>
-
-                        <div class="project-details hidden mt-4 bg-white p-3 md:p-4 rounded-xl shadow-md">
-                            <h4 class="text-base md:text-lg font-bold mb-2">Project Overview</h4>
-                            <p class="text-gray-700 text-sm md:text-base mb-3">
-                                Task Hero is a comprehensive e-commerce platform designe
+    <!-- SCRIPT -->
+    <script>
+        function downloadResume() {
+            const link = document.createElement("a");
+            link.href = "resume/Roshan.docx"; // path to your file
+            link.download = "Roshan.docx";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
